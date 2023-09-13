@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <label for="nom">Ingrese el nombre: </label>
+        <input type="text" name="nombre" id="nom" onblur="alerta()">
+        <br>
+        <br>
+        <label for="ape">Ingrese el apellido: </label>
+        <input type="text" name="apellido" id="ape" onblur="activar()">
+        <br>
+        <br>
+        <label>¿Desea registrarse en el torneo?</label>
+        <br><br>
+        <label for="si">Si</label>
+        <input type="radio" name="radio" id="si" onchange="checks()">
+        <label for="no">No</label>
+        <input type="radio" name="radio" id="no" onchange="checks()">
+        <br><br>
+        <label for="email">Ingrese el correo: </label>
+        <br><br>
+        <input type="email" name="" id="email" required>
+        <br><br>
+        
+        <label for="contra1">Ingrese la contraseña</label>
+        <input type="password" name="" id="contra1" onblur="verificacion()">
+        <br><br>
+        <label for="contra2">Confirme la contraseña</label>
+        <input type="password" name="" id="contra2" onblur="verificacion()">
+        <br><br>
+        <input disabled type="submit" value="Enviar" id="bto">
+
+        <div style="display: none;" id="escondido">
+            <span>¿Desea registrarse en el concurso?</span>
+            <br><br>
+            <label for="csi">Si</label>
+            <input type="checkbox" name="" id="csi">
+            <label for="cno">No</label>
+            <input type="checkbox" name="" id="cno">
+        </div>
+        <br><br>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
